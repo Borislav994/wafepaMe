@@ -1,0 +1,27 @@
+<div ng-controller="ActivitiesCtrl">
+
+	<form>
+		<div style="text-align:center;" class="form-group">
+			<h1>Activities:</h1>
+		</div>
+
+		<div class="form-group">
+			<button ng-click="goToAdd()">Add Activity</button>
+		</div>
+
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="a in activities">
+					<td>{{a.name}}</td>
+					<td><button ng-click="goToEdit(a.id)">Edit</button></td>
+					<td><button ng-click="doDelete(a.id)">Delete</button>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</div>

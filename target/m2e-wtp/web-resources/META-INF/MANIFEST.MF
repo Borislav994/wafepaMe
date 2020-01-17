@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: wafepaMe Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Borislav
+Implementation-Vendor-Id: jwd
+Build-Jdk: 1.8.0_231
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

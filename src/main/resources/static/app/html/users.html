@@ -1,0 +1,25 @@
+<div ng-controller="UsersCtrl">
+	<div style="text-align: center;" class="form-group">
+		<h1>Users:</h1>
+	</div>
+	<div style="text-align: center;" class="form-group">
+		<button  class="form-control" ng-click="goToAdd()">Add User</button>
+	</div>
+
+	<table class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th>FristName</th>
+				<th>LastName</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="u in users">
+				<td>{{u.firstName}}</td>
+				<td>{{u.lastName}}</td>
+				<td><button ng-click="goToEdit(u.id)">Edit</button></td>
+				<td><button ng-click="doDelete(u.id)">Delete</button>
+			</tr>
+		</tbody>
+	</table>
+</div>
